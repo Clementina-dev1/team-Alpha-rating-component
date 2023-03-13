@@ -1,1 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--Very-Dark-Blue);
+}
+
+/* RATE SECTION */
+.main{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card_rating{
+    background-color: rgb(21, 26, 34);
+    padding: 2rem;
+    border-radius: 1rem;
+   /* display: flex;*/
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.rate_img{
+    background-color: var(--Dark-Blue);
+    color: var(--Medium-Grey);
+    padding: 1rem;
+    border-radius: 100%;
+    width: 3rem;
+}
+
+.heading{
+    color: var(--White);
+}
+
+.text{
+    color: var(--Medium-Grey);
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.round_rate{
+        color: var(--White);
+        background-color: var(--Light-Grey);
+        border-radius: 50%;
+        font-family: var(--font);
+        font-weight: 400;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    
+}
+
+.round_rate:last-child{
+    margin-right: 0;
+}
+
+.round_rate:hover{
+    background-color: var(--orange);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--orange);
+    text-align: center;
+    padding: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background-color: var(--Medium-Grey);
+    color: var(--orange);
+    background-color: var(--White);
+}
+/* SELECTED SECTION */
+#selected_card_hidden{
+    background-color: rgb(21, 26, 34);
+    padding: 2rem;
+    border-radius: 1rem;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.second_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.rated{
+    color: var(--orange);
+    background-color: var(--Dark-Blue);
+    padding: .5rem 1rem;
+    font-weight: lighter;
+    border-radius: 2rem;
+}
+
+
+/* JS CLASSES */
+.hidden{
+    display: none;
+}
+
+.orange{
+    background-color: var(--orange);
+    color: var(--White);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 700px) {
+    .card,
+    .selected{
+        width: 600px;
+    }
+}
