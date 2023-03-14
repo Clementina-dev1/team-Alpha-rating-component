@@ -36,11 +36,13 @@ body{
 
 #card_rating{
     background-color: rgb(21, 26, 34);
-    padding: 2rem;
+    padding: 1.5 1.8rem;
     border-radius: 1rem;
    /* display: flex;*/
     flex-direction: column;
     gap: 2rem;
+    width: 380px ;
+    height:360px ;
 }
 
 .rate_img{
@@ -68,7 +70,7 @@ body{
   
 .round_rate{
         color: var(--White);
-        background-color: var(--Light-Grey);
+        background-color: var(--Medium-Grey);
         border-radius: 50%;
         font-family: var(--font);
         font-weight: 400;
@@ -107,7 +109,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    height: 40px;
 }
 
 .btn:hover{
@@ -125,6 +128,8 @@ body{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    width: 327px ;
+    height:360px ;
     
 }
 
